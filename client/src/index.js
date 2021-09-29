@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import {UserProvider} from './Context/user'
+import { WorkoutContextProvider } from './Context/WorkoutContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+     <UserProvider>
+        <WorkoutContextProvider>
+        <App />
+        </WorkoutContextProvider>
+      </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
