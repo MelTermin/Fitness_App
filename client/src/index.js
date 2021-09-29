@@ -9,11 +9,13 @@ import { WorkoutContextProvider } from './Context/WorkoutContext';
 
 ReactDOM.render(
   <React.StrictMode>
-     <UserProvider>
+      <Router>
+      <UserProvider>
         <WorkoutContextProvider>
         <App />
         </WorkoutContextProvider>
       </UserProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
