@@ -85,7 +85,7 @@ app.get("/tracker/:id", async (req, res) => {
   }
 });
 
-//to update the tracker item//
+
 app.put("/tracker/:id", async(req,res) => {
   try {
     const id = parseInt(req.params.id);
