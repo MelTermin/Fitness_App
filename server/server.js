@@ -85,7 +85,6 @@ app.get("/tracker/:id", async (req, res) => {
   }
 });
 
-
 app.put("/tracker/:id", async(req,res) => {
   try {
     const id = parseInt(req.params.id);
